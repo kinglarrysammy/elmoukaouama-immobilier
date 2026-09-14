@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ElMoukaouama Immobilier | Mohammedia</title>
+<meta name="description" content="Agence Immobilière ElMoukaouama – El Alia, Mohammedia. Vente, location, estimation.">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header"><div class="container header-inner">
+<a href="#" class="logo"><span class="logo-mark">EL</span><span class="logo-text">MOUKAOUAMA</span></a>
+<nav class="nav" id="nav"><a href="#services">Services</a><a href="#booking">Visite</a><a href="#estimation">Estimation</a><a href="#contact">Contact</a></nav>
+<a href="https://wa.me/212662254425" class="btn btn-whatsapp header-cta" target="_blank">WhatsApp</a>
+<button class="menu-toggle" id="menuToggle" type="button">☰</button>
+</div></header>
+<section class="hero"><div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80')"></div><div class="hero-overlay"></div>
+<div class="container hero-content">
+<p class="hero-eyebrow">El Alia • Mohammedia</p>
+<h1>Votre agence de confiance<br>à El Alia.</h1>
+<p class="hero-sub">Vente, location et conseil immobilier à Hay Houria et Mohammedia.</p>
+<div class="hero-ctas"><a href="#estimation" class="btn btn-primary">Estimation gratuite</a><a href="#booking" class="btn btn-secondary">Réserver une visite</a></div>
+</div></section>
+<section class="section" id="services"><div class="container">
+<div class="section-header"><h2>Nos services</h2></div>
+<div class="services-grid">
+<article class="service-card"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80')"></div><div class="service-body"><h3>Vente & Achat</h3><p>Accompagnement complet de l'estimation à la signature.</p></div></article>
+<article class="service-card"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=600&q=80')"></div><div class="service-body"><h3>Location</h3><p>Appartements et maisons à El Alia et Mohammedia.</p></div></article>
+<article class="service-card"><div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80')"></div><div class="service-body"><h3>Estimation</h3><p>Estimation gratuite de votre bien.</p></div></article>
+</div></div></section>
+<section class="section booking-section" id="booking"><div class="container">
+<div class="section-header"><h2>Réserver une visite</h2></div>
+<form class="booking-form" id="bookingForm">
+<div class="form-row"><input name="name" placeholder="Votre nom" required><input name="phone" type="tel" placeholder="Téléphone / WhatsApp" required></div>
+<div class="form-row"><select name="interest" required><option value="">Je souhaite...</option><option>Acheter</option><option>Louer</option><option>Vendre</option></select><select name="area"><option value="">Zone</option><option>El Alia</option><option>Hay Houria</option><option>Mohammedia</option><option>Autre</option></select></div>
+<div class="form-row"><input name="date" type="date" required><select name="time" required><option value="">Créneau</option><option>Matin</option><option>Après-midi</option><option>Soir</option></select></div>
+<textarea name="message" rows="2" placeholder="Précisions..."></textarea>
+<button type="submit" class="btn btn-primary btn-full">Confirmer ma visite</button>
+</form></div></section>
+<section class="section cta-section" id="estimation"><div class="container"><div class="cta-box">
+<h2>Estimation gratuite</h2>
+<form class="estimate-form" id="estimateForm">
+<div class="form-row"><input name="name" placeholder="Nom" required><input name="phone" type="tel" placeholder="Téléphone" required></div>
+<div class="form-row"><select name="type" required><option value="">Type</option><option>Appartement</option><option>Villa</option><option>Terrain</option></select><input name="details" placeholder="Détails..."></div>
+<button type="submit" class="btn btn-primary btn-full">Demander estimation</button>
+</form>
+<p class="form-note">+212 662 25 44 25</p>
+</div></div></section>
+<section class="section section-alt" id="contact"><div class="container">
+<div class="section-header"><h2>Contact</h2></div>
+<div class="contact-grid">
+<div class="contact-card"><h3>WhatsApp</h3><p><a href="tel:+212662254425">+212 662 25 44 25</a></p><a href="https://wa.me/212662254425" class="btn btn-whatsapp" target="_blank">Ouvrir WhatsApp</a></div>
+<div class="contact-card"><h3>Adresse</h3><p>Hay Houria I, El Alia<br>Mohammedia</p></div>
+</div></div></section>
+<footer class="footer"><div class="container footer-inner"><span class="logo-text">ElMoukaouama Immobilier</span><p class="footer-copy">© 2026 • Mohammedia</p></div></footer>
+<div class="float-stack">
+<button type="button" class="chatbot-toggle" id="chatToggle">💬</button>
+<a href="https://wa.me/212662254425" class="float-whatsapp" target="_blank">WA</a>
+</div>
+<div class="chatbot-panel" id="chatPanel">
+<div class="chatbot-header"><div><strong>Assistant ElMoukaouama</strong><span>En ligne</span></div><button type="button" class="chatbot-close" id="chatClose">✕</button></div>
+<div class="chatbot-messages" id="chatMessages"></div>
+<div class="chatbot-quick" id="chatQuick"></div>
+<div class="chatbot-input-row"><input id="chatInput" placeholder="Votre message..."><button type="button" id="chatSend">Envoyer</button></div>
+</div>
+<script src="script.js"></script>
+</body></html>
